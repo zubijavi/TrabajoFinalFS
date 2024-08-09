@@ -1,0 +1,54 @@
+.contenedor-principal {
+    /* width: 90%; */
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contenedor-principal .card {
+    border: double rgb(255, 255, 255) 5px;
+    width: 30%;
+    height: 20vw;
+    display: flex;
+    gap: 0.5rem;
+    padding: .5rem;
+
+}
+
+.contenedor-principal .card img {
+    height: 100%;
+    width: auto;
+}
+
+.contenedor-principal .card .contenedor-detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 100%;
+}
+
+.contenedor-principal .card .contenedor-detalles .overview {
+    overflow: auto;
+    /* Permite el desplazamiento si el texto es demasiado largo */
+    max-height: 100%;
+    /* Asegúrate de que el contenedor tenga una altura máxima */
+    text-overflow: ellipsis;
+    /* Añade puntos suspensivos si el texto es demasiado largo */
+}
+
+/* Estiliza la barra de desplazamiento */
+.contenedor-principal .card .contenedor-detalles .overview::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.contenedor-principal .card .contenedor-detalles .overview::-webkit-scrollbar-thumb {
+    background: rgb(10, 10, 10); /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 4px; /* Radio de borde del pulgar */
+}
+
+.contenedor-principal .card .contenedor-detalles .overview::-webkit-scrollbar-track {
+    background: #604d4d; /* Color del fondo de la barra de desplazamiento */
+    border-radius: 4px; /* Radio de borde de la pista */
+}

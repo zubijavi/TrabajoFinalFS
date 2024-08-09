@@ -1,0 +1,40 @@
+header{
+  padding: 0 2.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+header h1{
+  color: rgb(255, 255, 255);
+}
+header nav{
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+header nav ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+header nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+nav ul li a.active {
+  color: transparent;
+  background: linear-gradient(90deg, rgb(140, 81, 180) 0%, rgb(239, 78, 78) 50%, rgba(252,176,69,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 1.65vw;
+
+}
+header nav ul li a:hover{
+  color: transparent;
+  background: linear-gradient(90deg, rgb(140, 81, 180) 0%, rgb(239, 78, 78) 50%, rgba(252,176,69,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+

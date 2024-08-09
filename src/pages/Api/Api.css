@@ -1,0 +1,64 @@
+.contenedor-api{
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.form-api{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1vw;
+}
+.form-api input {
+    height: 2vw;
+    width: 60%;
+    border-radius: 2px;
+    padding: 1.5rem 0.5rem; /* Ajusta el padding horizontal según sea necesario */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del input */
+    text-align: center; /* Centra el texto dentro del input */
+    font-size: 2vw; /* Tamaño del texto, para que coincida con el placeholder */
+}
+.form-api input::placeholder {
+    text-align: center; /* Centra el texto del placeholder */
+    display: flex;
+    align-items: center;
+}
+.form-api button{
+    border-radius: 10%;
+    font-size: 1vw;
+    background-color: black;
+    color: rgb(253, 253, 253);
+    padding: 0 1.5vw;
+}
+.table-api {
+    margin-top: 2vw;
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+    width: 80%; /* Asegura que la tabla ocupe el 100% del ancho disponible */
+}
+
+.table-api th, .table-api td {
+    border: 1px solid rgb(255, 255, 255); /* Borde blanco para las celdas */
+    padding: 0.5rem; /* Espaciado interno de las celdas */
+    text-align: center; /* Centra el texto en las celdas */
+}
+
+.table-api thead {
+    font-size: 2vw; /* Tamaño de fuente para el encabezado */
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo para el encabezado, opcional */
+    color: rgb(255, 255, 255); /* Color del texto en el encabezado */
+}
+.table-api tbody td{
+    font-size: 1.5vw;
+}
+
+.table-api tbody td img {
+    width: 100px; /* Ancho fijo para las imágenes */
+    height: auto; /* Mantiene la proporción de aspecto */
+    object-fit: cover; /* Asegura que la imagen cubra el área de la celda sin distorsión */
+}
+

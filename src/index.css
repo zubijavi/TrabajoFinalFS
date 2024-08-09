@@ -1,0 +1,6 @@
+body {
+    background: rgb(7, 26, 45);
+    background: linear-gradient(90deg, rgba(7, 26, 45, 1) 0%, rgba(9, 19, 28, 0.8015581232492998) 100%);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}

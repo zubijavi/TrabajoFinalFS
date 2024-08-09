@@ -1,0 +1,129 @@
+h1{
+    text-align: center;
+}
+.contenedor-database{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2vw;
+}
+.formularios{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+
+}
+.formularios .formulario-buscar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5vw;
+    gap: .5vw;
+    border: 1px dashed grey;
+    padding: 2rem 5rem;
+    width: 50%;
+}
+.formularios .formulario-buscar button, input, select{
+    background-color: black;    
+    width: 100%;
+    font-size: 1.5vw;
+}
+.formularios .formulario-buscar button{
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+.formularios .formulario-buscar select, input, input::placeholder{
+    width: 100%;
+    color: aqua;
+    text-align: center;
+}
+
+.formularios .formulario-agregar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5vw;
+    gap: .5vw;
+    border: 1px dashed grey;
+    padding: 2rem 5rem;
+    width: 50%;
+
+}
+.formularios .formulario-agregar input,select{
+    width: 100%;
+    color: aqua;
+    text-align: center;
+}
+
+.formularios .formulario-agregar button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 1.5vw;
+
+}
+.flex{
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+
+}
+.contenedor-tabla{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.tabla-famosos {
+    margin-top: 2vw;
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+    width: 80%; /* Asegura que la tabla ocupe el 100% del ancho disponible */
+}
+
+.tabla-famosos th, .tabla-famosos td {
+    border: 1px solid rgb(255, 255, 255); /* Borde blanco para las celdas */
+    padding: 0.5rem; /* Espaciado interno de las celdas */
+    text-align: center; /* Centra el texto en las celdas */
+    height: 5vw; /* Altura fija para las celdas */
+    vertical-align: middle; /* Asegura que el contenido esté centrado verticalmente */
+}
+
+.tabla-famosos thead {
+    border: 1px solid rgb(255, 255, 255); /* Borde blanco para las celdas */
+    font-size: 2vw; /* Tamaño de fuente para el encabezado */
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo para el encabezado, opcional */
+    color: rgb(255, 255, 255); /* Color del texto en el encabezado */
+}
+
+.tabla-famosos tbody td {
+    border: 1px solid rgb(255, 255, 255); /* Borde blanco para las celdas */
+    font-size: 1.5vw;
+}
+.flex-image{
+    display: flex;
+    justify-content: center;
+}
+.tabla-famosos tbody td img {
+    border-radius: 10%;
+}
+.editar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+.editar button{
+    background-color: black;
+    color: white;
+    height: 30%;
+    width: 50%;
+    font-size: 1vw;
+    border-radius: 10%;
+}
