@@ -5,28 +5,28 @@ import multer from 'multer';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-// Obtén el directorio actual usando import.meta.url
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Configuración de CORS
 app.use(cors());
 
-// Middleware para manejar JSON
 app.use(express.json());
 
-// Configuración de Multer para manejar archivos subidos
+// Configuración de Multer 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    // Usa la carpeta 'public/uploads' como destino
-    const uploadPath = path.join(__dirname, 'public', 'uploads');
+    const uploadPath = path.join(__dirname, process.env.UPLOADS_DIR);
     
     if (!fs.existsSync(uploadPath)) {
-      fs.mkdirSync(uploadPath, { recursive: true }); // Crea la carpeta si no existe
+      fs.mkdirSync(uploadPath, { recursive: true }); 
     }
     
     cb(null, uploadPath);
@@ -122,13 +122,6 @@ app.delete('/api/famosos/:id', async (req, res) => {
   }
 });
 
-
-// Ruta de prueba
-app.get('/', (req, res) => {
-  res.send('Hola Mundo!');
-});
-
-// Servir archivos estáticos desde 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {

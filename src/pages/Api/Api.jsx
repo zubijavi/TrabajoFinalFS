@@ -13,15 +13,14 @@ const Api = (props) => {
   useEffect(() => {
     const fetchCharacters = async () => {
       try {
-        const response = await axios.get('https://hp-api.herokuapp.com/api/characters'); // URL correcta de la API
-        console.log(response.data); // Verifica la estructura de la respuesta en la consola
+        const response = await axios.get(`${import.meta.env.VITE_HARRYPOTTER_API_URL}`)
 
         if (Array.isArray(response.data)) {
           setCharacters(response.data);
         } else {
           console.error('La respuesta de la API no contiene un array de personajes');
         }
-        setSearchTerm(''); // Inicializa searchTerm
+        setSearchTerm('');
       } catch (error) {
         console.error('Error al obtener los personajes:', error);
       } finally {
@@ -36,8 +35,6 @@ const Api = (props) => {
     e.preventDefault();
     setLoading(true);
     try {
-      // La API de Harry Potter no tiene soporte para búsqueda directamente
-      // Tendrás que filtrar localmente en el frontend
       const response = await axios.get('https://hp-api.herokuapp.com/api/characters');
       if (Array.isArray(response.data)) {
         const filteredCharacters = response.data.filter(character =>

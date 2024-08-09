@@ -1,8 +1,12 @@
-# React + Vite
+Trabajo final Full Stack Avanzado, alumno Javier Zubillaga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicacion web Full Stack desde la cual se pueden consultar APIS externas (Harry Potter y The Movie BD), tambien se monta una base de datos local que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre una base de datos de famosos, incluyendo la posibilidad de subir y gestionar imágenes.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Herramientas Utilizadas
+Node.js: entorno de ejecucion
+React-Vite: Frontend
+Express: Backend
+MongoDB: con su libreria Mongoose para la creacion de y alojamiento de la base de datos
+Multer: para la carga de archivos
+Axios para la comunicacion entre back y front
+dotenv: variables de entorno
